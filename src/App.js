@@ -321,7 +321,7 @@ export default function App() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          model: MODEL, max_tokens: 1000,
+          model: MODEL, max_tokens: 4096,
           messages: [{ role: "user", content: `${prompts[callType]}\n\nTranscript:\n${transcript}` }]
         })
       });
@@ -394,7 +394,7 @@ After completing, confirm: contact name, company name, deal name, and note IDs.`
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          model: MODEL, max_tokens: 1000,
+          model: MODEL, max_tokens: 4096,
           messages: [{ role: "user", content: instruction }],
           mcp_servers: [HUBSPOT_MCP]
         })

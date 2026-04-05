@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 
-const API = "https://api.anthropic.com/v1/messages";
+const API = "/api/claude";
 const MODEL = "claude-sonnet-4-6";
 const HUBSPOT_MCP = { type: "url", url: "https://mcp.hubspot.com/anthropic", name: "hubspot" };
 
